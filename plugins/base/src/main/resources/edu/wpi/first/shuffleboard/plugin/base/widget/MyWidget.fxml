@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.StackPane?>
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
-           fx:controller="edu.wpi.first.shuffleboard.plugin.base.widget.BooleanBoxWidget"
+           fx:controller="edu.wpi.first.shuffleboard.plugin.base.widget.MyWidget"
            fx:id="root"
            minWidth="4" minHeight="4"
            prefHeight="4" prefWidth="4">
