@@ -5,7 +5,7 @@
            xmlns:fx="http://javafx.com/fxml"
            fx:controller="edu.wpi.first.shuffleboard.plugin.base.widget.BooleanBoxWidget"
            fx:id="root"
-           minWidth="4" minHeight="4"
-           prefHeight="4" prefWidth="4">
+           minWidth="32" minHeight="32"
+           prefHeight="128" prefWidth="128">
 
 </StackPane>

@@ -61,7 +61,6 @@ import edu.wpi.first.shuffleboard.plugin.base.widget.ToggleButtonWidget;
 import edu.wpi.first.shuffleboard.plugin.base.widget.ToggleSwitchWidget;
 import edu.wpi.first.shuffleboard.plugin.base.widget.UltrasonicWidget;
 import edu.wpi.first.shuffleboard.plugin.base.widget.VoltageViewWidget;
-import main.java.edu.wpi.first.shuffleboard.plugin.base.widget.MyWidget;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
@@ -110,7 +109,6 @@ public class BasePlugin extends Plugin {
   public List<ComponentType> getComponents() {
     return ImmutableList.of(
         WidgetType.forAnnotatedWidget(BooleanBoxWidget.class),
-        WidgetType.forAnnotatedWidget(MyWidget.class),
         WidgetType.forAnnotatedWidget(ToggleButtonWidget.class),
         WidgetType.forAnnotatedWidget(ToggleSwitchWidget.class),
         WidgetType.forAnnotatedWidget(NumberSliderWidget.class),
@@ -147,7 +145,6 @@ public class BasePlugin extends Plugin {
   public Map<DataType, ComponentType> getDefaultComponents() {
     return ImmutableMap.<DataType, ComponentType>builder()
         .put(DataTypes.Boolean, WidgetType.forAnnotatedWidget(BooleanBoxWidget.class))
-        .put(DataTypes.Boolean, WidgetType.forAnnotatedWidget(MyWidget.class))
         .put(DataTypes.Number, WidgetType.forAnnotatedWidget(TextViewWidget.class))
         .put(DataTypes.String, WidgetType.forAnnotatedWidget(TextViewWidget.class))
         .put(AnalogInputType.Instance, WidgetType.forAnnotatedWidget(VoltageViewWidget.class))
